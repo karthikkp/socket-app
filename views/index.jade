@@ -1,0 +1,9 @@
+extends layout
+block content
+  h1= title
+  p Welcome to #{title}
+  #details
+   form(action='/',method='post')
+    label(for='nickname') Enter a nickname
+    input(type='text',id='nickname',name='nickname')
+    input(type='submit',value='submit')
